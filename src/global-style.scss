@@ -1,0 +1,100 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
+
+// Override whole app font
+.application {
+  font-family: "Open Sans";
+}
+
+// TYPOGRAPHY
+.title, .headline, .display-4, .display-3, .display-2, .display-1 {
+  font-family: "Raleway"!important;
+}
+
+.headline {
+  color: var(--v-secondary-darken3);
+}
+
+.v-input__slot, .v-btn {
+  border-radius: 5px!important;
+}
+
+
+// Table styling
+.v-datatable {
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  overflow-y: hidden!important;
+  // border: 1px solid var(--v-secondary-lighten2);
+  thead {
+    tr:not(.v-datatable__progress) {
+      height: 40px!important;
+      background-color: var(--v-secondary-darken3);
+      th {
+        padding: 0 12px!important;
+        color: var(--v-secondary-lighten3);
+        font-weight: bold;
+        font-family: "Raleway"!important;
+        &:not(:last-child) {
+          border-right: 1px solid var(--v-secondary-darken1);
+        }
+      }
+    }
+  }
+  tbody {
+    tr:not(.v-datatable__progress) {
+      height: 40px!important;
+      &:nth-child(odd) {
+        background-color: var(--v-secondary-lighten3);
+      }
+      &:nth-child(even) {
+        background-color: var(--v-secondary-lighten4)!important;
+      }
+      td {
+        padding: 0 12px!important;
+        height: inherit!important;
+        &:not(:last-child) {
+          border-right: 1px solid var(--v-secondary-lighten2);
+        }
+      }
+    }
+  }
+}
+
+.v-card {
+  border-radius: 10px!important;
+  overflow: hidden;
+}
+
+.v-tabs__bar {
+  border-radius: 0px;
+}
+
+// Buton
+.v-btn {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+// Change button font
+.v-btn__content {
+  font-family: "Raleway"!important;
+  font-weight: bold;
+}
+
+.primary-gradient-bg {
+  background-image: linear-gradient(to left, var(--v-primary-base), var(--v-tertiary-base))
+}
+
+.card-container {
+    padding: 25px 30px;
+}
+
+.v-input__slot {
+    border-width: 1px !important;
+    min-height: 58px!important;
+}
+
+ul {
+    list-style-type: none;
+}
