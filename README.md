@@ -1,4 +1,4 @@
-# omipos-back-office
+# Vue Dashboard Sample using Vuetify
 
 ## Project setup
 ```
